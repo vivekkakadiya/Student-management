@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { studentLogout, newerChats, previousChats} from '../redux/action/studentAction'
 
 
+
+
 const Home = () => {
     const history = useHistory()
     const store = useSelector((store) => store)
@@ -48,12 +50,12 @@ const Home = () => {
                                         <Link className="dropdown-item" to="/student/getAllSubjects">Student Subject List</Link>
                                     </div>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <button type="button" className="btn"><Link to="/studentDetails"><li>STUDENTS</li></Link></button>
                                 </li>
                                 <li className="nav-item">
                                     <button type="button" className="btn"><Link to="/studentDetails"><li>NEW CONVERSATION ({store.student.newerChats.length})</li></Link></button>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <button type="button" className="btn"><Link to="/student/updatePassword"><li>UPDATE PASSWORD</li></Link></button>
                                 </li>

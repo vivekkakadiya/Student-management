@@ -65,7 +65,9 @@ const StudentDetails = () => {
     }
   
     return (
-        <div>
+        <>
+        <h1>Student Details</h1>
+        {/* <div>
             {store.student.isAuthenticated ? <>
                 <HomeHelper />
                 <div className="container">
@@ -193,7 +195,8 @@ const StudentDetails = () => {
 
                 </div></> : (history.push('/'))}
             
-        </div>
+        </div> */}
+        </>
     )
 }
 
